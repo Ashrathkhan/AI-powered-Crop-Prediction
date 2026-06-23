@@ -35,7 +35,7 @@ Crop Prediction
 Result Display
 Installation
 Clone the Repository
-git clone https://github.com/your-username/AI-Powered-Crop-Prediction.git
+git clone https://github.com/Ashrathkhan
 cd AI-Powered-Crop-Prediction
 Install Dependencies
 pip install -r requirements.txt
@@ -72,6 +72,7 @@ Supports precision agriculture.
 Reduces crop selection errors.
 Increases farming efficiency.
 Encourages data-driven farming practices.
+
 Contributors
 
 Ashrath A
