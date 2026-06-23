@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Crop Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="overlay">
+    <div class="container">
+        <h2>🌱 AI Crop Prediction</h2>
+
+        <form action="/predict" method="post">
+            <input type="number" step="any" name="N" placeholder="Nitrogen (N)" required>
+            <input type="number" step="any" name="P" placeholder="Phosphorus (P)" required>
+            <input type="number" step="any" name="K" placeholder="Potassium (K)" required>
+            <input type="number" step="any" name="temperature" placeholder="Temperature (°C)" required>
+            <input type="number" step="any" name="humidity" placeholder="Humidity (%)" required>
+            <input type="number" step="any" name="ph" placeholder="pH Value" required>
+            <input type="number" step="any" name="rainfall" placeholder="Rainfall (mm)" required>
+
+            <button type="submit">Predict Crop</button>
+        </form>
+
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</div>
+
+</body>
+</html>
